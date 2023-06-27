@@ -19,6 +19,8 @@ configurations {
 
 
 
+
+
 repositories {
     mavenCentral()
 }
@@ -30,6 +32,11 @@ dependencies {
     runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+    implementation("io.springfox:springfox-swagger-ui:2.9.2")
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+    implementation("io.springfox:springfox-swagger2:2.9.2")
+
 }
 
 tasks.withType<Test> {
