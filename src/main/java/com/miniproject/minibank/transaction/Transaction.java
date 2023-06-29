@@ -1,6 +1,7 @@
 package com.miniproject.minibank.transaction;
 
 import com.miniproject.minibank.common.entity.BaseEntity;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,17 +14,21 @@ import javax.persistence.Id;
  * accountNumber - 계좌번호
  */
 @Entity
+@Builder
+@Getter
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@NoArgsConstructor
 public class Transaction  extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private int balance;
+    private long balance;
 
     private String type;
 
-    private int balanceAfterTransaction;
+    private long balanceAfterTransaction;
 
     private String accountNumber;
 }

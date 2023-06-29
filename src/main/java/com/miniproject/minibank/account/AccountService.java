@@ -25,6 +25,7 @@ public class AccountService {
                 .stream().map(account -> AccountGetResponse.builder()
                         .number(account.getNumber())
                         .balance(account.getBalance())
+                        .type(account.getType())
                         .branchId(account.getBranchId())
                         .customerId(account.getCustomerId())
                         .build())

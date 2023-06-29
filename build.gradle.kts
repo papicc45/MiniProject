@@ -36,6 +36,13 @@ dependencies {
     implementation("io.springfox:springfox-swagger-ui:2.9.2")
     // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
     implementation("io.springfox:springfox-swagger2:2.9.2")
+    implementation("io.github.flashvayne:chatgpt-spring-boot-starter:1.0.0")
+    implementation("org.springframework.boot:spring-boot-configuration-processor")
+
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    implementation("com.googlecode.json-simple:json-simple:1.1.1")
+
+
 
 }
 
