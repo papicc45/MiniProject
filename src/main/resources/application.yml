@@ -35,8 +35,8 @@ logging:
     com.miniproject: error
 
 chatgpt:
-  api-key: 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
+  api-key: 
 openai:
-  api-key : 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
+  api-key : 
 
 
