@@ -20,8 +20,3 @@ INSERT INTO employee VALUES(4, now(), now(), 2, '김영철');
 INSERT INTO employee VALUES(5, now(), now(), 3, '구삿갓');
 INSERT INTO employee VALUES(6, now(), now(), 3, '박상철');
 
-INSERT INTO customer VALUES(1, now(), now(), 10, 'test1@naver.com', '브론즈', '김브론', '백수');
-INSERT INTO customer VALUES(2, now(), now(), 15, 'test2@nate.com', '골드', '최골드', '부자');
-INSERT INTO customer VALUES(3, now(), now(), 25, 'test3@gmail.com', '마스터', '감바스', '비밀');
-INSERT INTO customer VALUES(4, now(), now(), 57, 'test4@naver.com', '실버', '박실버', '유튜버');
-INSERT INTO customer VALUES(5, now(), now(), 42, 'test5@daum.net', '아이언', '남궁이언', '무술협회');

@@ -1,6 +1,10 @@
 package com.miniproject.minibank.customer;
 
 import com.miniproject.minibank.common.entity.BaseEntity;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,11 +18,17 @@ import java.time.LocalDateTime;
  * email - 이메일, organization - 회사
  */
 @Entity
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Customer  extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    private String password;
 
     private String name;
 
